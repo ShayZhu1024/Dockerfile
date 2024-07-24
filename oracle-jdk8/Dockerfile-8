@@ -1,0 +1,4 @@
+FROM scratch
+ADD rootfs.tar.gz  / 
+ENV LD_LIBRARY_PATH=/lib/:/lib64/:/lib32/:/libx32/:/usr/local/jdk1.8.0_411/lib/   JAVA_HOME=/usr/local/jdk1.8.0_411/  PATH=/bin/:/usr/sbin/:/usr/local/jdk1.8.0_411/bin/
+CMD ["java", "-version"]
